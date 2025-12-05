@@ -251,28 +251,6 @@ curl -X POST "$API_URL/ingest" \
 
 This ensures **no data loss** even if the worker crashes mid-processing.
 
-## 🎥 Video Walkthrough Checklist
-
-For your 3-5 minute video, cover:
-
-1. **Cloud Console Tour**
-   - Show Pub/Sub topic and subscription
-   - Show Firestore database structure
-   - Show Cloud Run services
-
-2. **Live Demo**
-   - Send a curl request to the API
-   - Show the 202 response
-   - Navigate to Firestore and show the processed document
-
-3. **Multi-Tenant Explanation**
-   - Show two different tenants in Firestore
-   - Explain the path structure: `tenants/{id}/processed_logs/{log_id}`
-
-4. **Crash Recovery Explanation**
-   - Explain Pub/Sub retry mechanism
-   - Show the ack deadline setting
-
 ## 💰 Cost Considerations (Free Tier)
 
 | Service | Free Tier Limit | This Project Usage |
@@ -298,8 +276,4 @@ cd worker
 pip install -r requirements.txt
 python main.py
 ```
-
-## 📝 License
-
-This project is for assessment purposes.
 
